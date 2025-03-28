@@ -1,11 +1,16 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from "@/layouts/Layout.astro";
-import Footer from "@/components/Footer.astro";
+import profileIcon from "../assets/images/profile-icon.png";
 ---
 
 <Layout>
   <main id="main-content" data-layout="index">
     <section id="hero" class="pt-8 pb-6">
+      <Image 
+      height={250}
+      src={profileIcon} 
+      alt="A bird sitting on a nest of eggs." />
       <h2 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
         @luisdoesdev
       </h2>
